@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLIEZAM.LV — Latvijas GTA kopiena</title>
+  <meta name="description" content="Latvijas GTA kopiena vienuviet. Jaunumi, spēlētāji un pasākumi.">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #09090e;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #24202e;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .logo span { color: #a855f7; }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 13px;
+    }
+
+    .hero {
+      min-height: 650px;
+      padding: 110px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        linear-gradient(90deg, #09090ef2, #09090e88),
+        linear-gradient(0deg, #09090e, transparent),
+        url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=85") center/cover;
+    }
+
+    .tag {
+      color: #c084fc;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(42px, 9vw, 82px);
+      line-height: 1;
+      max-width: 750px;
+      margin: 22px 0;
+    }
+
+    h1 span { color: #a855f7; }
+
+    .description {
+      color: #c5c2ce;
+      line-height: 1.7;
+      max-width: 480px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #9333ea;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 22px;
+      width: fit-content;
+    }
+
+    .section {
+      padding: 65px 8%;
+    }
+
+    .section h2 { font-size: 30px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #15131d;
+      border: 1px solid #292333;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    .card h3 { color: #c084fc; }
+
+    .card p, footer { color: #aaa; line-height: 1.6; }
+
+    footer {
+      padding: 30px 8%;
+      border-top: 1px solid #292333;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 18px 5%; }
+      nav a { margin-left: 8px; font-size: 11px; }
+      .hero { min-height: 570px; padding: 70px 6%; }
+      .section { padding: 45px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">BLIEZAM<span>.LV</span></div>
+  <nav>
+    <a href="#sakums">Sākums</a>
+    <a href="#kopiena">Kopiena</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="sakums">
+    <div class="tag">LATVIAN GAMING COMMUNITY</div>
+    <h1>TAVA PILSĒTA.<br>TAVI <span>NOTEIKUMI.</span></h1>
+    <p class="description">
+      Latvijas GTA kopiena vienuviet.
+      Jaunumi, spēlētāji, diskusijas un pasākumi.
+      Mūsu piedzīvojums tikai sākas.
+    </p>
+    <a class="button" href="#kopiena">IEPAZĪSTI KOPIENU</a>
+  </section>
+
+  <section class="section" id="kopiena">
+    <h2>BLIEZAM KOPĀ</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Jaunumi</h3>
+        <p>Viss aktuālais par GTA 6 un GTA pasauli.</p>
+      </div>
+      <div class="card">
+        <h3>Kopiena</h3>
+        <p>Latvijas spēlētāji vienuviet.</p>
+      </div>
+      <div class="card">
+        <h3>Spēlētāji</h3>
+        <p>Atrodi cilvēkus, ar kuriem spēlēt.</p>
+      </div>
+      <div class="card">
+        <h3>Roleplay</h3>
+        <p>Nākotnes projekti un mūsu iespējamā pilsēta.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  BLIEZAM.LV © 2026 · Latvijas GTA kopiena
+</footer>
+
+</body>
+</html>
